@@ -1,0 +1,9 @@
+.image {
+    transform: rotate(0deg);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.image.rotate {
+    transform: rotate(360deg);
+}

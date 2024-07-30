@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background: #ffeeee;
+}
+
+.container1 {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "main main"
+        "sub sub"
+        "title-importanza title-importanza"
+        "importanza importanza"
+}
+
+container-quanto, container-soluzione {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.container1 button {
+    position: center;
+    height: 40px;
+    top: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: 600;
+    border: none;
+  }
+  
+.container1 button:hover {
+    background-color: rgb(234, 214, 214);
+    transition: 0.4s;
+}
+
+main{
+    grid-area: main;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.title-importanza {
+    font-weight: bold;
+    font-size:2rem;
+    grid-area: title-importanza;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3%;
+}
+
+.importanza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.indispensabile {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-inline: 3rem;
+}
+
+.imp{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.mancanza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.img-sol {
+    max-height: 100%;
+    max-width: 80%;
+}
+.img-sol img {
+    width: 100%;
+    height: auto;
+}
+.img-quanto{
+    max-height: 100%;
+    max-width: 95%;
+}
+.img-quanto img {
+    width: 100%;
+    height: auto;
+}
+
+.container2{
+    min-height: 60vh;
+    grid-area: container2;
+    display: grid;
+    justify-content: baseline;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr 0.1fr;
+    grid-template-areas: 
+        "title-vantaggi title-vantaggi title-vantaggi"
+        "img-monitora img-rischi img-colazione"
+        "imp1 imp2 imp3"
+        "monitora rischi colazione";
+    column-gap: 2rem;
+    background: rgb(234, 214, 214);
+    padding-top:2rem;
+}
+
+.imp1{
+    grid-area: imp1;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.imp2{
+    grid-area: imp2;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.imp3{
+    grid-area: imp3;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.title-vantaggi {
+    grid-area: title-vantaggi;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.img-monitora {
+    grid-area: img-monitora;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+
+.img-monitora img {
+    width: 25%;
+    height: auto;
+}
+
+.monitora{
+    grid-area: monitora;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.img-rischi {
+    grid-area: img-rischi;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+
+.img-rischi img {
+    width: 20%;
+    height: auto;
+}
+
+.rischi{
+    grid-area: rischi;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.img-colazione {
+    grid-area: img-colazione;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+
+.img-colazione img {
+    width: 25%;
+    height: auto;
+}
+
+.colazione{
+    grid-area: colazione;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.container3{
+    grid-area: container3;
+    display: grid;
+    justify-content: baseline;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: 
+        "title-principi title-principi title-principi"
+        "anonimato responsabilità volontariato"
+        "gratuità igiene periodicità";
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.title-principi{
+    grid-area: title-principi;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.container3 .pricipi {
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+  
+.container3 .pricipi:hover {
+    background-color: rgb(234, 214, 214);
+    transition: 0.4s;
+}
+
+.mb-0 {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,.1);
+    width: 100%;
+}
+
+.anonimato {
+    grid-area: anonimato;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 1rem;
+}
+
+.responsabilità{
+    grid-area: responsabilità;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 1rem;
+}
+
+.volontariato{
+    grid-area: volontariato;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-right: 1rem;
+}
+
+
+.gratuità{
+    grid-area: gratuità;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 1rem;
+}
+
+.igiene{
+    grid-area: igiene;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 1rem;
+}
+
+.periodicità{
+    grid-area: periodicità;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1070px){
+
+    .container1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "main main"
+            "sub sub"
+            "title-importanza title-importanza"
+            "importanza importanza"
+            "title-quanto ."
+            "quanto img-quanto"
+            ". title-soluzione"
+            "img-soluzione soluzione"
+            "title-mancanza title-mancanza"
+            "mancanza mancanza"
+            "container2 container2"
+            "container3 container3";
+    }
+    .img-soluzione {
+        justify-self: center;
+        align-self: baseline;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.5.fr 1.2fr 0.5.fr 1.2fr 1.2fr 0.5.fr 1.2fr 0.5fr 1.2fr 1.2fr 1.2fr;
+        grid-template-areas: 
+            "main"
+            "sub"
+            "title-importanza"
+            "importanza"
+            "title-quanto"
+            "img-quanto"
+            "quanto"
+            "title-soluzione"
+            "img-soluzione"
+            "soluzione"
+            "title-mancanza"
+            "mancanza"
+            "container2"
+            "container3";
+    }
+    .importanza {
+        padding-inline: 3rem;
+    }
+    .mancanza {
+        padding-inline: 3rem;
+    }
+    .container2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+            "title-vantaggi"
+            "img-monitora"
+            "imp1"
+            "monitora"
+            "img-rischi"
+            "imp2"
+            "rischi"
+            "img-colazione"
+            "imp3"
+            "colazione";
+        padding-inline: 3rem;
+    }
+    .img-monitora img {
+        width: 12%;
+        height: auto;
+    }
+    .img-rischi img {
+        width: 12%;
+        height: auto;
+    }
+    .img-colazione img {
+        width: 16%;
+        height: auto;
+    }
+    .container3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title-principi title-principi"
+            "anonimato responsabilità"
+            "volontariato gratuità"
+            "igiene periodicità";
+        padding-inline: 3rem;
+    }
+    .anonimato {
+        padding-inline: 1rem;
+    }
+    .responsabilità {
+        padding-inline: 1rem;
+    }
+    .volontariato {
+        padding-inline: 1rem;
+    }
+    .gratuità {
+        padding-inline: 1rem;
+    }
+    .igiene {
+        padding-inline: 1rem;
+    }
+    .periodicità {
+        padding-inline: 1rem;
+    }
+}
+
+@media only screen and (max-width: 678px){
+    .container3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title-principi"
+            "anonimato" 
+            "responsabilità"
+            "volontariato" 
+            "gratuità"
+            "igiene" 
+            "periodicità";
+        padding-inline: 3rem;
+    }
+    /*devo fare in modo che i bottoni siano al centro*/
+    .container3 .principi .button{
+        width: 100%;
+    }
+}

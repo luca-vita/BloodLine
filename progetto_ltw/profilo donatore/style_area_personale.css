@@ -1,0 +1,49 @@
+#img-btt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color:  #ffeeee;;
+}
+.modifica {
+  font-size: 3rem;
+  margin-left: 1.5em;
+}
+.container .submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.submit-btn {
+  background-color: #d1001f;
+  color: #ffeeee;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20rem;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #b11028;
+  transition: 0.4s;
+}
+.error {
+  left: 20px;
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+
+
+

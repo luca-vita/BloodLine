@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background: #ffeeee;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.form-box {
+    padding: 5%;
+}
+
+.cerca{
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.search-form .form-field{
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+}
+.search-form .input-text {
+    position: relative;
+    width: 50%;
+    height: 36px;
+    border-width: 0.1rem;
+    border-color: black;
+    border-radius: 20rem;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.search-form .input-text:focus{
+    outline: none;
+}
+
+.search-form .submit-btn {
+    background-color: #d1001f;
+    color: #ffeeee;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form .submit-btn:hover {
+    background-color: #b11028;
+    transition: 0.4s;
+}
+
+.search-form ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+    transform: translate(-80px, -13px);
+}
+
+.error {
+    left: 200px;
+    font-size: 1em;
+    color: red;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text:focus + .label + .error,
+.input-text:not(:placeholder-shown) + .label + .error {
+  display: block;
+}
+
+.str {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.str .struttura {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    padding: 2rem;
+}
+
+.str .struttura a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.str .struttura a:hover{
+    color: #b11028;
+}
+
+.errore {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: black;
+}
+.pre{
+    line-height: 30px;
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: black;
+}
+.prenotazioni {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+.prenotazioni-body {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    justify-content: right;
+}
+
+

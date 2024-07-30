@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background: #ffeeee;
+}
+
+.sign {
+    max-width: 500px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.sign .title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 48px;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    color: #d1001f;
+}
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: black;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text:not(:placeholder-shown) + .label {
+  top: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form .input-text:focus{
+    outline: none;
+}
+.contact-form .label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form .submit-btn {
+    display: inline-block;
+    background-color: #d1001f;
+    color: #ffeeee;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #b11028;
+    transition: 0.4s;
+}
+
+.contact-form ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+    transform: translate(-6px, -16px);
+}
+.contact-form .form-field .sesso{
+    display: inline-block;
+    justify-content: center;
+    top: 2px;
+    margin-right: 0.9rem;
+  }
+.messaggio{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.messaggio a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.messaggio a:hover{
+    color: #b11028;
+}
+.error {
+    position: absolute;
+    left: 20px;
+    bottom: -34px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.input-text:focus + .label + .error,
+.input-text:not(:placeholder-shown) + .label + .error {
+  display: block;
+}

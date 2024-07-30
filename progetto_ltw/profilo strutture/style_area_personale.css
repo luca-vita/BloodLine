@@ -1,0 +1,20 @@
+#img-btt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-color:  #ffeeee;;
+}
+
+.submit .submit-btn:hover {
+background-color: #b11028;
+transition: 0.4s;
+}
+.error {
+  left: 20px;
+  font-size: 12px;
+  color: red;
+  display: none;
+}

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background: #ffeeee;
+}
+.moduli {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 30px 0px 30px;
+}
+.testo-moduli {
+    flex-basis: 50%;
+}
+.immagine {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 50%;
+    padding-right: 100px;
+}
+
+.immagine img {
+    max-width: 100%;
+    height: auto;
+}
+@media  (max-width: 850px) {
+    .moduli {
+        flex-direction: column;
+    }
+    .immagine {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        float: right;
+        flex-basis: 100%;
+        padding-right: 0px;
+    }
+}
+.informativa {
+    padding: 40px 30px 0px 30px;
+    text-align: left;
+    line-height: 2rem;
+}
+.consenso {
+    padding: 40px 30px 0px 30px;
+    text-align: left;
+    line-height: 2rem;
+}
+.malattie {
+    padding: 40px 30px 0px 30px;
+    text-align: left;
+    line-height: 2rem;
+}
+.questionario {
+    padding: 40px 30px 0px 30px;
+    text-align: left;
+    line-height: 2rem;
+}
+.file a{
+    text-decoration: none;
+    color: black;
+}
+.file a:hover{
+    color:  rgb(129, 80, 137);
+}
+.file {
+    font-size: 1.2rem;
+    flex-basis: 20%;
+}
+@media screen and (max-width: 800px) {
+    .moduli{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.h1{
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+.p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+}
+.informativa .spunta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5em;
+    font-size: 1.2rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1.2rem;
+}
+
+.input-text {
+    font-size: 1rem;
+    border-width: 0 0 2px 0;
+    border-color: black;
+    background-color: transparent;
+    width: 40%;
+}
+.malattie a{
+    text-decoration: underline;
+    color: black;
+}
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.submit-btn {
+    background-color: #d1001f;
+    color: #ffeeee;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20rem;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #b11028;
+    transition: 0.4s;
+}
+
+.error {
+    left: 200px;
+    font-size: 1em;
+    color: red;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.err-msg a{
+    text-decoration: underline;
+    color: red;
+}
+.questionario {
+    padding: 3%;
+    border: 0.1rem solid black;
+    border-radius: 20px;
+    margin: 8rem;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+.questionario .titolo{
+    padding-bottom: 3%;
+    font-size: 2.5rem;
+}
+.f {
+    width: 50%;
+    float: left;
+}
+
+@media (max-width: 800px) {
+    .f {
+        width: 100%;
+        float: none;
+    }
+    .questionario {
+        padding: 3%;
+        border: 0.1rem solid black;
+        border-radius: 20px;
+        margin: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+}
+.profilo {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 10%;
+}
+.profilo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+  
+  
+  
