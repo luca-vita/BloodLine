@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project is a web-based platform designed to connect blood donors, hospitals, and volunteering associations. The platform allows users to register and create profiles. Hospitals and associations can create donation events or emergency calls, while donors can sign up to donate or respond to emergency calls. Email notifications are sent to donors when an emergency call is posted.
+This project is a web-based platform designed to connect blood donors, hospitals, and volunteering associations. The platform allows users to register and create profiles. Hospitals and associations can create donation events or emergency calls, while donors can sign up to donate or respond to emergency calls. Email notifications are sent to donors when an emergency call is posted. 
+DISCLAIMER: This is just an excercise to gain experience in the technologies and languages used in web development applications, it was not designed for real world usage.
 
 ## Features
 
